@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+
 def print_list_integer(my_list=[]):
-    i = 0
-    while (i < len(my_list)):
-        print("{:d}".format(my_list[i]))
-        i += 1
+    """
+    Prints integers in a list
+    Args:
+        my_list - list of integers defauult []
+    """
+
+    for i in my_list:
+        print("{:d}".format(i))
