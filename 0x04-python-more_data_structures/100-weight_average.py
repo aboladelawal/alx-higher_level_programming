@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+
 def weight_average(my_list=[]):
-    if len(my_list) == 0:
+    """
+    a function that returns the weighted average of all integers tuple
+    """
+    if my_list is None or my_list == []:
         return 0
-    return sum([x*y for (x, y) in my_list]) / sum([y for (x, y) in my_list])
+    i_xy = sum(map(lambda a: a[0] * a[1], my_list))
+    i_x = sum(map(lambda a: a[1], my_list))
+    return i_xy / i_x
