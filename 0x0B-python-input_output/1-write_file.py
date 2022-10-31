@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """
-a function that read text from a file
+function that write a string to text (UTF8) & return total of character written
 """
 
 
 def write_file(filename="", text=""):
+    """ module write_file
     """
-    open a file and write to it
-    """
-    with open(filename, mode='w', encoding="UTF8") as myfile:
-        wordcount = myfile.write(text)
-    return wordcount
+    with open(filename, 'w') as f:
+        return f.write(text)

@@ -1,13 +1,12 @@
 #!/usr/bin/python3
+''' function that returns the JSON representation of an object (string)
+'''
 
-"""
-a function that return JSON represent of data
-"""
 import json
 
 
 def to_json_string(my_obj):
-    """
-    returning jsons as obj
-    """
+    ''' module to_json_strin
+     returns JSON representation
+    '''
     return json.dumps(my_obj)
